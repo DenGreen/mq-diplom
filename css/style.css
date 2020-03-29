@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+@font-face {
+    font-family: Sans-Regular;  /**Arial Narrow, sans-serif**/
+    src: url("../fonts/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Sans-Bold; /**Arial Black, sans-serif**/
+    src: url("../fonts/OpenSans-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+.background-styles {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: #14173a;
+}
+
+.background-styles::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #14173a;
+    opacity: 0.9;
+}
+
+.header {
+    background-image: url("../images/football_767.jpg");
+}
+
+.header-container {
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: 1;
+
+    
+}
+
+.logo {
+    padding-top: 35px;
+    text-align: center;
+}
+
+.logo-icon {
+    width: 130px;
+    height: 35px;
+    fill: #ffffff;
+}
+
+.title {
+    padding: 20vh 20px 0 20px;
+    
+}
+
+.header-title {
+    font-family: Sans-Bold, "Arial Black", sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.header-position {
+    display: block;
+    padding-left: 45px;
+}
+
+.btn-shop {
+    padding-top: 13vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.shop-inner {
+    display: flex;
+    width: 120px;
+}
+
+.shop-link {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #5e42b0;
+    text-decoration: none;
+}
+
+.shop-link:nth-child(1n+2) {
+    margin-top: 3vh;
+}
+
+.shop-icon {
+    width: 25px;
+    fill: #ffffff;
+}
+
+.conteinet-shop {
+    padding-left: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-link-regular {
+    display: block;
+    font-family: Sans-Regular, "Arial Narrow", sans-serif;
+    text-transform: uppercase;
+    font-size: 8px;
+    color: #ffffff;
+}
+
+.text-link-bold {
+    font-family: Sans-Bold, "Arial Black", sans-serif;
+    text-transform: uppercase;
+    font-size: 8px;
+    color: #ffffff;
+}
