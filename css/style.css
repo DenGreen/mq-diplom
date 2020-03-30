@@ -20,7 +20,8 @@
 
 .background-styles {
     position: relative;
-    height: 100vh;
+    height: 560px;
+    max-height: 650px;
     width: 100%;
     background-repeat: no-repeat;
     background-position: top;
@@ -54,7 +55,7 @@
 }
 
 .logo {
-    padding-top: 35px;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -65,7 +66,7 @@
 }
 
 .title {
-    padding: 20vh 20px 0 20px;
+    padding: 85px 20px 0 20px;
     
 }
 
@@ -78,11 +79,12 @@
 
 .header-position {
     display: block;
+    padding-top: 10px;
     padding-left: 45px;
 }
 
 .btn-shop {
-    padding-top: 13vh;
+    padding-top: 85px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -133,4 +135,102 @@
     text-transform: uppercase;
     font-size: 8px;
     color: #ffffff;
+}
+
+/** Конец header **/
+
+.content-holder {
+    position: relative;
+}
+
+.content-flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-header { 
+    padding-top: 25px;   
+    background-color: #ffffff;
+}
+
+.content-title {
+    width: 320px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-family: Sans-Bold, "Arial Black", sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #e7e7e7;
+}
+
+.content-img-box {
+    height: 225px;
+}
+
+.content-img {
+    position: absolute;
+}
+
+.content-text {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.content-text:nth-child(1n+2) {
+    padding-top: 50px;
+}
+.content-text:nth-of-type(3n+1) {
+    background-color: #fafafa;
+}
+
+.content-text:nth-of-type(3n+2) {
+    background-color: #f5f4f9;
+}
+
+.content-text:nth-of-type(3n+3) {
+    background-color: #5e42b0;
+}
+
+.content-text-box {
+    box-sizing: border-box;
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content-text-title {
+    display: flex;
+    
+    font-family: Sans-Bold, "Arial Black", sans-serif;
+    text-transform: uppercase;
+    font-size: 23px;
+    color: #c1c1c1;
+}
+
+.content-text-number {
+    padding-right: 5px;
+    font-size: 14px;
+    color: #000000;
+    line-height: 21px;
+}
+
+.content-text-number::after {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: 0px;
+    width: 15px;
+    height: 4px;
+    border-radius: 2px;
+    background: #5e42b0;
+}
+
+.content-article {
+    padding-top: 15px;
+    font-family: Sans-Regular, "Arial Narrow", sans-serif;
+    font-size: 15px;
+    color: #000000;
 }
