@@ -178,17 +178,17 @@
 }
 
 .aside-width-box {
-  width: 320px;   /**меняем шырину тут**/ 
+  width: 320px;   /**меняем ширину тут**/ 
 }
 
 .aside-content-position-right {
   display: flex;
-  justify-content: center; /**меняем выравнивание**/
+  justify-content: flex-start; /**меняем выравнивание**/
 }
 
 .aside-content-position-left {
   display: flex;
-  justify-content: center;  /**меняем выравнивание**/
+  justify-content: flex-start;  /**меняем выравнивание**/
 }
 
 .padding-left, 
@@ -207,11 +207,13 @@
 .aside-content-img-position-left {
   position: absolute;
   top: 80px;
+  right: 60px;
 }
 
 .aside-content-img-position-right {
   position: absolute;
   top: 80px;
+  left: 10px;
 }
 
 .aside-text-title {
@@ -262,56 +264,6 @@
 .aside-text-white {
   color: #ffffff;
 }
-/**.content {
-  padding-bottom: 45px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content {
-  padding-top: 75px;
-}
-
-.content:nth-child(1n + 3) {
-  padding-top: 50px;
-}
-.content:nth-of-type(3n + 1) {
-  background-color: #fafafa;
-}
-
-.content:nth-of-type(3n + 2) {
-  background-color: #f5f4f9;
-}
-
-.content:nth-of-type(3n + 3) {
-  background-color: #5e42b0;
-}
-
-.content-number:after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 16px;
-  border-radius: 2px;
-}
-
-.number-after-color-purpur:after {
-  background: #5e42b0;
-}
-
-.number-after-color-white:after {
-  background: #ffffff;
-}
-
-.number-after-color-ametist:after {
-  background: #8f7bc8;
-}
-
-.content-number-color:after {
-  background: #ffffff;
-}**/
-
 
 
 
