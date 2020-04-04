@@ -134,8 +134,7 @@
 
 /** Конец header **/
 
-
-.aside-flex-box-center{
+.aside-flex-box-center {
   display: flex;
   justify-content: center;
 }
@@ -145,7 +144,7 @@
   padding-bottom: 225px;
 }
 
-.aside-flex-box-center:nth-of-type(1n+2) {
+.aside-flex-box-center:nth-of-type(1n + 2) {
   padding-bottom: 45px;
 }
 
@@ -153,23 +152,23 @@
   padding-top: 75px;
 }
 
-.aside-flex-box-center:nth-of-type(1n+3) {
+.aside-flex-box-center:nth-of-type(1n + 3) {
   padding-top: 50px;
 }
 
-.aside-flex-box-center:nth-of-type(3n+2) {
+.aside-flex-box-center:nth-of-type(3n + 2) {
   background-color: #fafafa;
 }
 
-.aside-flex-box-center:nth-of-type(3n+3) {
+.aside-flex-box-center:nth-of-type(3n + 3) {
   background-color: #f5f4f9;
 }
 
-.aside-flex-box-center:nth-of-type(3n+4) {
+.aside-flex-box-center:nth-of-type(3n + 4) {
   background-color: #5e42b0;
 }
 
-.background-gorblue:nth-of-type(3n+4) {
+.background-gorblue:nth-of-type(3n + 4) {
   background-color: #090c35;
 }
 
@@ -178,7 +177,7 @@
 }
 
 .aside-width-box {
-  width: 320px;   /**меняем ширину тут**/ 
+  width: 320px; /**меняем ширину тут**/
 }
 
 .aside-content-position-right {
@@ -188,11 +187,15 @@
 
 .aside-content-position-left {
   display: flex;
-  justify-content: flex-start;  /**меняем выравнивание**/
+  justify-content: flex-start; /**меняем выравнивание**/
 }
 
-.padding-left, 
 .padding-right {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.padding-left {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -231,7 +234,7 @@
   color: #000000;
 }
 
-.text-title-nomber-purpur{
+.text-title-nomber-purpur {
   color: #8765dd;
 }
 
@@ -255,6 +258,10 @@
   background: #ffffff;
 }
 
+.after-color-ametist:after {
+  background: #8f7bc8;
+}
+
 .aside-text {
   font-family: Sans-Regular, "Arial Narrow", sans-serif;
   font-size: 15px;
@@ -265,7 +272,62 @@
   color: #ffffff;
 }
 
+/** **/
+.post-flex-box-center {
+  display: flex;
+  justify-content: center;
+}
 
+.post-width-box {
+  /** тут пишем flex box и задаем элементам order **/
+  width: 320px;
+}
+
+.post-img-box {
+  position: relative; /**меняем высоту тут**/
+}
+
+.post-img {
+  width: 320px; /**меняем ширину тут**/
+  height: 350px;
+  object-fit: cover;
+}
+
+.post-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+
+  left: 20px;
+  top: 290px;
+  width: 70px;
+  height: 70px;
+
+  background-color: #5e42b0;
+}
+
+.text-title-nomber-white {
+  color: #ffffff;
+}
+
+.post-text-box {
+  padding: 30px 20px 75px;
+}
+
+.post-header-title {
+  font-family: Sans-Bold, "Arial Black", sans-serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #e7e7e7;
+}
+
+.post-text {
+  font-family: Sans-Regular, "Arial Narrow", sans-serif;
+  font-size: 15px;
+  color: #000000;
+}
 
 /** Подвал **/
 
@@ -327,4 +389,265 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .header-title {
+    font-size: 60px;
+  }
+
+  .shop-link {
+    width: 290px;
+  }
+
+  .aside-content-img-position-left {
+    top: 150px;
+    right: 410px;
+  }
+
+  .aside-content-img-position-right {
+    top: 40px;
+    left: 320px;
+  }
+  .asaid-img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .footer-text {
+    padding-top: 40px;
+    font-size: 60px;
+  }
+
+  .footer-slogan {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+  .header-title {
+    font-size: 64px;
+  }
+
+  .shop-link {
+    width: 320px;
+  }
+
+  .aside-content-img-position-left {
+    position: absolute;
+    top: 10px;
+    right: 430px;
+  }
+
+  .aside-content-img-position-right {
+    position: absolute;
+    top: -25px;
+    left: 330px;
+  }
+
+  .footer-text {
+    padding-top: 65px;
+    font-size: 80px;
+  }
+
+  .footer-slogan {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .header {
+    background-image: url(../images/football_1280.jpg);
+  }
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 768px;
+    min-width: 83%;
+    max-width: 100%;
+  }
+
+  .background-styles {
+    height: 960px;
+    max-height: 1050px;
+  }
+
+  .logo {
+    padding-top: 35px;
+  }
+
+  .logo-icon {
+    width: 190px;
+    height: 55px;
+  }
+
+  .title {
+    padding: 170px 80px 0 80px;
+  }
+
+  .btn-shop {
+    padding-top: 300px;
+  }
+
+  .shop-link {
+    height: 75px;
+    border-radius: 55px;
+  }
+
+  .shop-link:nth-child(1n + 2) {
+    margin-top: 0;
+    margin-left: 32px;
+  }
+
+  .shop-inner {
+    width: 210px;
+  }
+
+  .shop-icon {
+    width: 45px;
+  }
+
+  .conteiner-shop {
+    padding-left: 25px;
+  }
+
+  .text-link-regular {
+    font-size: 14px;
+  }
+
+  .text-link-bold {
+    font-size: 14px;
+  }
+
+  .aside-flex-box-center:nth-of-type(1) {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .aside-flex-box-center:nth-of-type(1n + 2) {
+    padding-bottom: 35px;
+  }
+
+  .aside-flex-box-center:nth-of-type(2) {
+    padding-top: 40px;
+  }
+
+  .aside-flex-box-center:nth-of-type(1n + 3) {
+    padding-top: 35px;
+  }
+
+  .aside-header-title {
+    font-size: 80px;
+  }
+
+  .aside-width-box {
+    width: 768px;
+    min-width: 83%;
+    max-width: 100%; /**меняем ширину тут**/
+  }
+
+  .aside-header-title-box {
+    width: 400px; /**меняем ширину тут**/
+  }
+
+  .aside-content-text-box {
+    width: 400px; /**меняем ширину тут**/
+  }
+
+  .aside-content-position-right {
+    display: flex;
+    justify-content: flex-end; /**меняем выравнивание**/
+  }
+
+  .padding-left {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+
+  .padding-right {
+    padding-right: 30px;
+    padding-left: 0;
+  }
+
+  .aside-text-title {
+    font-size: 32px;
+  }
+
+  .text-title-nomber {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .text-title-nomber:after {
+    height: 5px;
+    width: 20px;
+  }
+
+  .aside-text {
+    font-size: 16px;
+  }
+
+  .post-width-box {
+    width: 768px;
+    min-width: 83%;
+    max-width: 100%;
+  }
+
+  .post-img {
+    width: 768px;
+    min-width: 83%;
+    max-width: 100%;
+    height: 580px;
+  }
+
+  .post-badge {
+    left: 30px;
+    top: 510px;
+    width: 115px;
+    height: 115px;
+  }
+
+  .post-text-box {
+    padding: 85px 30px 95px;
+  }
+
+  .post-header-title {
+    font-size: 80px;
+  }
+
+  .post-text {
+    font-size: 24px;
+  }
+
+  /**
+  footer
+  **/
+
+  .footer-conteiner {
+    width: 768px;
+    min-width: 83%;
+    max-width: 100%;
+  }
+
+  .footer-logo-icon-box {
+    margin-top: 130px;
+    height: 140px;
+    width: 140px;
+    border-radius: 30px;
+    background-color: #6c4dc6;
+    fill: #ffffff;
+  }
+
+  .footer-logo-icon {
+    height: 85px;
+  }
+
+  .footer-btn-shop {
+    padding-top: 250px;
+  }
+
+  .footer-logo {
+    padding-top: 50px;
+  }
 }
