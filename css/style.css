@@ -19,7 +19,9 @@
 
 .background-styles {
   position: relative;
+
   min-height: 560px;
+
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -40,23 +42,27 @@
 .header {
   display: flex;
   justify-content: center;
+
   background-image: url("../images/football_767.jpg");
 }
 
 .header-container {
   width: 320px;
+
   position: relative;
   z-index: 1;
 }
 
 .logo {
   padding-top: 30px;
+
   text-align: center;
 }
 
 .logo-icon {
   width: 130px;
   height: 35px;
+
   fill: #ffffff;
 }
 
@@ -73,12 +79,14 @@
 
 .header-position {
   display: block;
+
   padding-left: 45px;
 }
 
 .btn-shop {
   padding-bottom: 20px;
   padding-top: 85px;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -86,14 +94,17 @@
 
 .shop-inner {
   display: flex;
+
   width: 120px;
 }
 
 .shop-link {
   display: flex;
   justify-content: center;
+
   width: 280px;
   height: 35px;
+
   box-sizing: border-box;
   border-radius: 20px;
   background-color: #5e42b0;
@@ -111,6 +122,7 @@
 
 .conteiner-shop {
   padding-left: 6px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,6 +130,7 @@
 
 .text-link-regular {
   display: block;
+
   font-family: Sans-Regular, "Arial Narrow", sans-serif;
   text-transform: uppercase;
   font-size: 8px;
@@ -289,6 +302,7 @@
 .post-img {
   width: 320px; /**меняем ширину тут**/
   height: 350px;
+
   object-fit: cover;
 }
 
@@ -333,6 +347,7 @@
 .footer {
   display: flex;
   justify-content: center;
+
   background-image: url(../images/game_767.jpg);
 }
 
@@ -342,6 +357,7 @@
   align-items: center;
 
   width: 320px;
+
   position: relative;
   z-index: 1;
 }
@@ -372,6 +388,7 @@
 
 .footer-text {
   padding-top: 50px;
+
   font-family: Sans-Bold, "Arial Black", sans-serif;
   text-transform: uppercase;
   font-size: 32px;
@@ -391,6 +408,7 @@
 
 .footer-btn-shop {
   padding-top: 65px;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -468,6 +486,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 768px;
     min-width: 83%;
     max-width: 100%;
@@ -707,6 +726,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 1900px;
     min-width: 83%;
     max-width: 100%;
@@ -849,6 +869,7 @@
   .post-width-box {
     position: relative;
     display: flex;
+
     width: 1900px;
     min-width: 83%;
     max-width: 100%;
@@ -901,7 +922,9 @@
   .footer-logo-icon-box {
     height: 140px;
     width: 140px;
+
     margin-top: 20px;
+
     border-radius: 30px;
     background-color: #6c4dc6;
     fill: #ffffff;
@@ -937,8 +960,9 @@
 @media (min-width: 1600px) {
 
   .title {
-    width: 1560px;
-    min-width: 83%;
+    box-sizing: border-box;
+    width: 1600px;
+    min-width: 80%;
     max-width: 100%;
   }
   
