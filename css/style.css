@@ -19,9 +19,7 @@
 
 .background-styles {
   position: relative;
-  height: 560px;
-  max-height: 650px;
-  width: 100%;
+  min-height: 560px;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -79,6 +77,7 @@
 }
 
 .btn-shop {
+  padding-bottom: 20px;
   padding-top: 85px;
   display: flex;
   justify-content: center;
@@ -347,6 +346,12 @@
   z-index: 1;
 }
 
+.footer-conteiner-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer-logo-icon-box {
   display: flex;
   justify-content: center;
@@ -469,8 +474,8 @@
   }
 
   .background-styles {
-    height: 960px;
-    max-height: 1050px;
+    min-height: 960px;
+
   }
 
   .logo {
@@ -649,5 +654,327 @@
 
   .footer-logo {
     padding-top: 50px;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1600px) {
+
+  
+  .aside-content-img-position-left {
+    top: 40px;
+    left: -10px;
+    right: auto;
+  }
+
+  .aside-content-img-position-right {
+    top: 40px;
+    right: 10px;
+    left: auto;
+  }
+
+  .post-badge {
+    top: calc(40% - (115px/2));
+    left: calc(50% - (115px/2));
+    width: 115px;
+    height: 115px;
+  }
+
+  .post-header-title {
+    font-size: 50px;
+  }
+
+  .post-text-box {
+    padding-top: 200px;
+  }
+  
+  .post-text-box-left {
+    padding-left: 5%;
+    padding-right: 15%;
+  }
+  .post-text-box-right {
+    padding-right: 5%;
+    padding-left: 15%;
+  }
+}
+
+
+@media (min-width: 961px) {
+
+  .header {
+    background-image: url(../images/football_1920.jpg);
+  }
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1900px;
+    min-width: 83%;
+    max-width: 100%;
+  }
+
+  .background-styles {
+    min-height: 960px;
+  }
+
+  .logo {
+    padding-top: 35px;
+  }
+
+  .logo-icon {
+    width: 190px;
+    height: 55px;
+  }
+
+  .title {
+    padding: 300px 80px 0 80px;
+  }
+
+  .header-position {
+    display: block;
+    padding-left: 27%;
+  }
+  
+  .header-title {
+    font-size: 90px;
+  }
+
+  .btn-shop {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+
+  .shop-link {
+    width: 300px;
+    height: 75px;
+    border-radius: 55px;
+  }
+
+  .shop-link:nth-child(1n + 2) {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
+  .shop-inner {
+    width: 210px;
+  }
+
+  .shop-icon {
+    width: 50px;
+  }
+
+  .conteiner-shop {
+    padding-left: 20px;
+  }
+
+  .text-link-regular {
+    font-size: 14px;
+  }
+
+  .text-link-bold {
+    font-size: 14px;
+  }
+
+  .aside-flex-box-center:nth-of-type(1) {
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+
+  .aside-flex-box-center:nth-of-type(1n + 2) {
+    padding-bottom: 60px;
+  }
+
+  .aside-flex-box-center:nth-of-type(2) {
+    padding-top: 80px;
+  }
+
+  .aside-flex-box-center:nth-of-type(1n + 3) {
+    padding-top: 60px;
+  }
+
+  .aside-header-title {
+    font-size: 80px;
+  }
+
+  .aside-width-box {
+    width: 1900px;
+    min-width: 83%;
+    max-width: 100%; /**меняем ширину тут**/
+  }
+
+  .aside-header-title-box {
+    width: 45%;  /**меняем ширину тут**/
+  }
+
+  .aside-content-text-box {
+    width: 45%;  /**меняем ширину тут**/
+  }
+
+  .aside-content-position-right {
+    display: flex;
+    justify-content: flex-end; /**меняем выравнивание**/
+  }
+
+  .padding-left {
+    padding-left: 10%;
+    padding-right: 0;
+  }
+
+  .padding-right {
+    padding-right: 10%;
+    padding-left: 0;
+  }
+
+  .aside-text-title {
+    font-size: 36px;
+  }
+
+  .text-title-nomber {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .text-title-nomber-padding {
+    padding-right: 10px;
+  }
+
+  .text-title-nomber:after {
+    height: 5px;
+    width: 28px;
+  }
+
+  .aside-text {
+    font-size: 20px;
+  }
+
+  .post-width-box {
+    position: relative;
+    display: flex;
+    width: 1900px;
+    min-width: 83%;
+    max-width: 100%;
+  }
+
+  .post-img-box {
+    position: static;
+  }
+
+  .post-img {
+    width: 100%;
+    height: 725px;
+  }
+
+  .post-img-box {
+    width: 50%;
+  }
+
+  .post-content-box {
+    width: 50%;
+  }
+
+  .post-content-box-order {
+    order: -1;
+  }
+
+  .post-text {
+    padding-top: 70px;
+    font-size: 24px;
+  }
+
+  /**
+  footer
+  **/
+
+  .footer-conteiner {
+    width: 1900px;
+    min-width: 83%;
+    max-width: 100%;
+  }
+
+  .footer-conteiner-holder {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-top: 230px;
+    width: 875px;
+  }
+
+  .footer-logo-icon-box {
+    height: 140px;
+    width: 140px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #6c4dc6;
+    fill: #ffffff;
+  }
+
+  .footer-text-holder {
+    padding-left: 25px;
+  }
+
+  .footer-logo-icon {
+    height: 85px;
+  }
+
+  .footer-text {
+    padding-top: 0;
+    font-size: 80px;
+    letter-spacing: 3px;
+  }
+
+  .footer-slogan {
+    font-size: 30px; 
+  }
+
+  .footer-btn-shop {
+    padding-top: 150px;
+  }
+
+  .footer-logo {
+    padding-top: 260px;
+  }
+}
+
+@media (min-width: 1600px) {
+
+  .title {
+    width: 1560px;
+    min-width: 83%;
+    max-width: 100%;
+  }
+  
+  .aside-content-img-position-left {
+    top: -70px;
+    left: 10%;
+    right: auto;
+  }
+
+  .aside-content-img-position-right {
+    top: -70px;
+    right: 10%;
+    left: auto;
+  }
+
+  .post-badge {
+    top: calc(40% - (155px/2));
+    left: calc(50% - (155px/2));
+    width: 155px;
+    height: 155px;
+  }
+
+  .post-header-title {
+    font-size: 80px;
+  }
+
+  .post-text-box {
+    padding-top: 240px;
+  }
+  
+  .post-text-box-left {
+    padding-left: 18%;
+    padding-right: 13%;
+  }
+  .post-text-box-right {
+    padding-right: 18%;
+    padding-left: 13%;
   }
 }
